@@ -1,0 +1,27 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function reverseArray() {
+            let array = [1, 2, 3, 4]
+            let j = 0
+            let r = 0
+            for (let i = 0; i < array.length / 2; i++) {
+                let r = array.length - 1 - i
+                j = array[i]
+                array[i] = array[r]
+                array[r] = j
+            }
+            return array
+        }
+        reverseArray()
+        console.log(reverseArray())
+
+    </script>
+</body>
+
+</html>
